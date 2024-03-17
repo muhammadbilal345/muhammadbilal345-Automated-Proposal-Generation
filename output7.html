@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 50px;
+          text-align: justify;
+          padding: 70px;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin-top: 40px;
+      }
+      
+    h1.title {
+        text-align: center;
+        font-size: 32px;
+        color: #333;
+        margin-top: 40px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+  }
+
+    h2 {
+    font-size: 20px;
+    margin-top: 30px;
+    }
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+      }
+
+      th.sprint-no {
+        width: 80px;
+      }
+
+      th.sr-no {
+        width: 60px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      ul li {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+      <h1 class="title">Project Proposal</h1>
+    <h1>Overview of Our Company:</h1>
+    <p>Codistan is a complete design studio with web design and development, software development, mobile app development, brand design, social media marketing and internet marketing. The company aims to holistically cover all areas of the virtual market by providing an integrated ecommerce solution to its customers. 
+
+In addition to the development of every kind, we also provide Social Media Marketing and Management services. These services include an amalgam of photography,videography, content and artwork generation, graphic designing and response handling as well as employing marketing strategies to promote business.
+
+We aim to provide our customers with a 360 degree solution by catering to all aspects of the virtual market from coding to handling the aesthetics thereby providing them with a one stop panacea.</p>
+    <h1>Job Title:</h1>
+    <p>"Harnessing ChatGPT for Automated Structured Data Extraction Using AWS Lambda"</p>
+    <h1>Job Description Summary:</h1>
+    <p>We will create an AWS Lambda function that uses ChatGPT to extract information from documents and creates structured content in JSON format. This function will be invoked by a website with an S3 bucket and a folder object. The function will fetch all files contained inside the folder, extract zip files and save the content to a sub-folder inside the bucket. It will then extract contents of all pdf, docx, and doc files and send them to ChatGPT for processing. The results from Chat</p>
+    <h1>Problem Statement:</h1>
+    <p>
+Create an AWS Lambda function that uses ChatGPT to extract information from documents and creates structured content in JSON format.
+1. The lambda function will be invoked by a website with an S3 bucket and a folder object.
+2. The function will fetch all files contained inside the folder. Any zip files will be extracted, and it's contents saved to a sub-folder inside the bucket.
+3. The contents of all files of filetype pdf, docx, and doc are extracted, and sent to ChatGPT for processing
+4. The results from ChatGPT are processed to extract pertinent information, and create a single JSON object, which is saved as a JSON file to the bucket
+5. When the function is complete, a webhook is sent to the website with the URI of the JSON object.
+</p>
+    <h1>Proposed Solution:</h1>
+    <h2>Technical Feasibility:</h2>
+    <p>We can develop web and mobile applications on the MERN Stack, MEAN Stack, FERN Stack, Android, iOS, Unity, React Native, Java, Node.js, PHP, Python, Angular.js, Bootstrap, jQuery, Express.js, Vue.js, Laravel, Django, MySQL, Firebase, AWS Dynamo DB, MongoDB, Joomla, Drupal, OpenCMS, WordPress, eCommerce, WooCommerce, BigCommerce, Prestashop, Amazon Cloud, OpenStack, Google Cloud, and Azure. For each project, we will choose the most suitable technology stack based on the requirements. We can develop the application with features like user authentication, payment gateway integration, real-time data synchronization, API integration, and responsive design. Furthermore, we can provide support and maintenance services for the developed applications.</p>
+    <h1>Scope:</h1>
+    <table>
+      <tr>
+        <th class="sprint-no">Sprint No.</th>
+        <th>Module Title</th>
+        <th class="sr-no">Sr. No.</th>
+        <th>Module Description</th>
+        <th>Timeline</th>
+        <th>Requirements</th>
+        <th>Deliverables</th>
+      </tr>
+      <tr>
+        <th colspan="7">Milestone 1</th>
+      </tr>
+
+      <tr>
+        <th>Sprint 1</th>
+        <td>Create Lambda function</td>
+        <td>1</td>
+        <td>Create a Lambda function that will be triggered by a website with an S3 bucket and folder object.</td>
+        <td>2 weeks</td>
+        <td>AWS Lambda, S3</td>
+        <td>A Lambda function that is triggered by a website and an S3 bucket</td>
+      </tr>
+
+      <tr>
+        <th>Sprint 2</th>
+        <td>Extract files from S3 bucket</td>
+        <td>2</td>
+        <td>Extract all files contained inside the folder. Any zip files will be extracted, and it's contents saved to a sub-folder inside the bucket.</td>
+        <td>1 week</td>
+        <td>S3</td>
+        <td>All files extracted from the S3 bucket</td>
+      </tr>
+
+      <tr>
+        <th colspan="7">Milestone 2</th>
+      </tr>
+
+      <tr>
+        <th>Sprint 3</th>
+        <td>Process documents using ChatGPT</td>
+        <td>3</td>
+        <td>Extract the contents of all files of filetype pdf, docx, and doc and send them to ChatGPT for processing.</td>
+        <td>2 weeks</td>
+        <td>ChatGPT</td>
+        <td>Contents of all documents processed with ChatGPT</td>
+      </tr>
+
+      <tr>
+        <th>Sprint 4</th>
+        <td>Create a JSON object from the ChatGPT results</td>
+        <td>4</td>
+        <td>Process the results from ChatGPT to extract pertinent information, and create a single JSON object.</td>
+        <td>2 weeks</td>
+        <td>ChatGPT</td>
+        <td>A single JSON object created from the ChatGPT results</td>
+      </tr>
+
+      <tr>
+        <th colspan="7">Milestone 3</th>
+      </tr>
+
+      <tr>
+        <th>Sprint 5</th>
+        <td>Save the JSON object to the S3 bucket</td>
+        <td>5</td>
+        <td>Save the JSON object as a JSON file to the S3 bucket</td>
+        <td>1 week</td>
+        <td>S3</td>
+        <td>A JSON file saved to the S3 bucket</td>
+      </tr>
+
+      <tr>
+        <th>Sprint 6</th>
+        <td>Send a webhook to the website</td>
+        <td>6</td>
+        <td>When the function is complete, send a webhook to the website with the URI of the JSON object.</td>
+        <td>1 week</td>
+        <td>None</td>
+        <td>A webhook sent to the website with the URI of the JSON object.</td>
+      </tr>
+
+    </table>
+    <h1>Resources Required:</h1>
+    <p><ul style="list-style-type: none;"><li>1. Project Manager</li><li>2. Software Developer</li><li>3. System Architect</li><li>4. Quality Assurance Engineer</li><li>5. Technical Writer</li><li>6. Database Administrator</li><li>7. Data Analyst</li><li>8. AI/ML Engineer</li><li>9. Cloud Solutions Architect</li><li>10. Cyber Security Expert</li></ul></p>
+    <h1>Contact Details:</h1>
+    <p><ul style="list-style-type: none;"><li>Codistan Ventures Building Plot no 15, I-11/3 Islamabad, 44000, Pakistan</li><li>contact@codistan.org</li><li>sales@codistan.org</li><li>6343 N Sacramento Ave #2w, Chicago, IL 60659</li><li>tel:7738002704</li></ul></p>
+    <h1>Note:</h1>
+    <p>We have generated a proposal tailored to your needs and look forward to discussing the specifics with you. Our team will be in touch soon to provide more information and to help you decide if this proposal is right for you.</p>
+  </body>
+</html>
