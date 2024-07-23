@@ -1,1 +1,3 @@
-"# Automated-Proposal-Generation" 
+- Utilized OpenAI API for text generation.
+- Prompt engineering the language model to get required content with improved performance.
+- Developed a set of proposal templates with predefined sections to handle dynamic content generation.
